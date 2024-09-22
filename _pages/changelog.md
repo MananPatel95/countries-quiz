@@ -1,3 +1,9 @@
+---
+layout: page
+title: What's New
+include_in_header: true
+---
+
 # Countries of the World App - Changelog
 
 ## Version 1.0.0 (Initial Release)
