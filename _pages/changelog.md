@@ -1,65 +1,55 @@
----
-layout: page
-title: What's New
-include_in_header: true
----
+# Countries of the World App - Changelog
 
-# Changelog
-Here you can keep a changelog for your app. Edit the markdown based CHANGELOG.md which is located in the _pages directory. The changelog below is simply an example changelog that serves to exemplify how the markdown can be used. You can be as creative as you want with the markdown.
+## Version 1.0.0 (Initial Release)
 
-<br>
+### Features:
 
-### `Latest`
-# **Version 2.0**
-This is the first update to our app. Jeez **goodness** by kept more sensually a much far proper exotically precise [here is a link](https://www.google.com) and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
+1. **Interactive World Map**
+   - Users can view a custom map of the world
+   - Map view can be toggled with a list view
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+2. **Country Guessing Game**
+   - Players can input country names to guess
+   - Real-time feedback on correct and incorrect guesses
+   - Visual indicators for correct and incorrect guesses
 
-#### Bug Fixes
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+3. **Game Mechanics**
+   - 15-minute time limit for each game session
+   - Pause functionality with a limit of 3 pauses per game
+   - Victory screen upon guessing all countries
+   - Game over screen when time runs out
 
-<br>
+4. **User Interface**
+   - Top bar displaying guessed country count and remaining time
+   - Input bar for entering country names
+   - Toggle between map view and continent table view
 
-### **Version 2.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
+5. **Sound Effects**
+   - Background music during gameplay
+   - Special music when 1 minute remains
+   - Sound effects for correct guesses, errors, and game end
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
+6. **Accessibility**
+   - Custom fonts for better readability
+   - High contrast colors for UI elements
 
-<br>
+7. **Game State Management**
+   - Local storage of game progress
+   - Ability to resume game after pausing
 
-________
-<br>
+8. **Developer Mode**
+   - Hidden developer settings for testing (only in debug builds)
+   - Options to reduce time and add most countries for quick testing
 
-### `Initial Release`
-# **Version 1.0**
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh divisively wherever because jeepers until since as that goodness roadrunner insanely belated physic jeepers hey jeepers much the beside steadfastly up toward indubitably this goodness playful.
+### Technical Details:
+- Built with SwiftUI for iOS
+- Uses MapKit for map rendering
+- Implements custom overlays for various game states (pause, exit confirmation, victory)
+- Utilizes Swift's property wrappers for efficient state management
 
-<br>
+### Known Limitations:
+- Currently only available in English
+- No online multiplayer functionality
+- High scores are not persisted between app launches
 
-## **Version 1.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
-
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-
-<br>
-
-## Version 1.0.1
-That wow robin one and gosh audibly darn that variously less across softly awakened under affectingly wildebeest from jeepers far contemplated and indisputably clung jeepers much mistaken some after mumbled hey certain neatly far alas more trod the swelled rolled permissively so save pert the tapir paradoxical off so then juggled crud a however overslept vehemently kept indisputably anteater walked alas or into.
-
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-
-#### Bug Fixes
-- Improved user sign up experience.
-- Unlike deliberately zebra hen oh jeez understandable. Alas and quit oh snooty unlike deliberately.
-
-<br>
+We're excited to bring you this first version of Countries of the World! Stay tuned for future updates and enhancements.
