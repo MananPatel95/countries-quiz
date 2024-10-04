@@ -6,6 +6,11 @@ include_in_header: true
 
 # Countries of the World App - Changelog
 
+## Version 1.1 - Oct 4th, 2024
+- Added alternate name guessing (eg. UK, USA)
+- Changed background colors
+- Update homepage verbage
+
 ## Version 1.0.0 (Initial Release) - Date TBD
 
 ### Features:
