@@ -7,9 +7,12 @@ include_in_header: true
 # Countries of the World App - Changelog
 
 ## Version 1.1 - Oct 4th, 2024
+- Added all 196 countries!
 - Added alternate name guessing (eg. UK, USA)
 - Changed background colors
+- Fixed polygon for Somalia
 - Update homepage verbage
+
 
 ## Version 1.0.0 (Initial Release) - Date TBD
 
@@ -40,18 +43,6 @@ include_in_header: true
    - Special music when 1 minute remains
    - Sound effects for correct guesses, errors, and game end
 
-6. **Accessibility**
-   - Custom fonts for better readability
-   - High contrast colors for UI elements
-
-7. **Game State Management**
-   - Local storage of game progress
-   - Ability to resume game after pausing
-
-8. **Developer Mode**
-   - Hidden developer settings for testing (only in debug builds)
-   - Options to reduce time and add most countries for quick testing
-
 ### Technical Details:
 - Built with SwiftUI for iOS
 - Uses MapKit for map rendering
@@ -59,8 +50,8 @@ include_in_header: true
 - Utilizes Swift's property wrappers for efficient state management
 
 ### Known Limitations:
-- Currently only available in English
-- No online multiplayer functionality
-- High scores are not persisted between app launches
+- Currently only available in English 
+- No online multiplayer functionality (...yet)
+- High scores are not persisted between app launches (...yet)
 
 We're excited to bring you this first version of Countries of the World! Stay tuned for future updates and enhancements.
