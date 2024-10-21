@@ -6,6 +6,13 @@ include_in_header: true
 
 # Countries of the World App - Changelog
 
+## Version 1.3 - Oct 16th, 2024
+- Added a flag guessing game mode!
+- Added a capital guessing game mode!
+- Updated homepage verbage
+- Fixed keyboard layout bug and choppy animations
+- Added animations
+
 ## Version 1.1 - Oct 4th, 2024
 - Added all 196 countries!
 - Added alternate name guessing (eg. UK, USA)
