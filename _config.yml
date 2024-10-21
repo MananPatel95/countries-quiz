@@ -13,7 +13,7 @@ presskit_download_link                    :                                     
 app_icon                                  : assets/app-icon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Countries Quiz                                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Free                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Test your global knowledge! Guess all the countries of the world! You only have 15 minutes...
+app_description                           : Test your global knowledge! Guess all the countries, flags, and capitals of the world!
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -40,8 +40,8 @@ features:
     description                           : Tailor your quiz experience with adjustable settings for both relaxed learning and intense challenges.
     fontawesome_icon_name                 : cogs
 
-  - title                                 : Educational Experience
-    description                           : Perfect for students, travelers, and anyone looking to improve their global awareness in an entertaining way.
+  - title                                 : Multiple Game Modes
+    description                           : Learn, practice, and test your knowledge with different game modes, including country guessing, flag guessing, and capital guessing.
     fontawesome_icon_name                 : graduation-cap
 
 # Theme Settings
