@@ -384,6 +384,7 @@ nav > ul li a:active {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	max-width: 280px;
 	max-height: 250px;
 	margin: 0 auto;
 }
@@ -401,8 +402,8 @@ nav > ul li a:active {
 .getAppText {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #000;
-	margin: 0 0 8px 0;
+	color: #333;
+	margin: 0 0 4px 0;
 }
 .cameraText {
 	font-size: 0.9rem;
@@ -413,9 +414,11 @@ nav > ul li a:active {
 	.qrCodeContainer {
 		padding: 20px;
 		max-width: 240px;
+		max-height: 220px;
 	}
 	.qrCode {
-		max-width: 160px;
+		max-width: 170px;
+		margin-bottom: 14px;
 	}
 	.getAppText {
 		font-size: 1.3rem;
@@ -424,10 +427,12 @@ nav > ul li a:active {
 @media only screen and (max-width: 480px) {
 	.qrCodeContainer {
 		padding: 16px;
-		max-width: 200px;
+		max-width: 220px;
+		max-height: 200px;
 	}
 	.qrCode {
-		max-width: 140px;
+		max-width: 150px;
+		margin-bottom: 12px;
 	}
 	.getAppText {
 		font-size: 1.2rem;
