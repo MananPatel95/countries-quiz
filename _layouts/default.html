@@ -51,9 +51,10 @@
                             </p>
                         </div>
                         <div class="downloadButtonsContainer">
-                            <div class="qrCodeContainer">
-                                <img class="qrCode" src="assets/get-app-qr.png" alt="Scan QR code to download app">
-                            </div>
+                            {% if site.playstore_link %}
+                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                            {% endif %}
+                            <img class="getAppImage" src="assets/get-app-qr.png" alt="Scan QR code to download app">
                         </div>
                     </div>
                     {% include features.html %}

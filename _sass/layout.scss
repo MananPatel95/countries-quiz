@@ -359,6 +359,10 @@ nav > ul li a:active {
 		margin-bottom: 0px;
 	}
 	
+	.getAppImage {
+		height: 200px;
+	}
+	
 } 
 
 @media only screen and (max-width: 528px) {
@@ -368,114 +372,27 @@ nav > ul li a:active {
 		margin-bottom: 24px;
 	}
 	
+	.getAppImage {
+		height: 180px;
+	}
+	
 } 
 
 .appStore {
 	height: 75px;
 }
 
-// QR Code Styling
-.qrCodeContainer {
-	background: #ffffff;
-	border-radius: 16px;
-	padding: 24px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	max-width: 280px;
-	max-height: 250px;
-	margin: 0 auto;
-}
-.qrCode {
-	max-width: 200px;
-	height: auto;
-	display: block;
-	margin-bottom: 16px;
-}
-.qrText {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.getAppText {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #333;
-	margin: 0 0 4px 0;
-}
-.cameraText {
-	font-size: 0.9rem;
-	color: #666;
-	margin: 0;
-}
-@media only screen and (max-width: 768px) {
-	.qrCodeContainer {
-		padding: 20px;
-		max-width: 240px;
-		max-height: 220px;
-	}
-	.qrCode {
-		max-width: 170px;
-		margin-bottom: 14px;
-	}
-	.getAppText {
-		font-size: 1.3rem;
-	}
-}
-@media only screen and (max-width: 480px) {
-	.qrCodeContainer {
-		padding: 16px;
-		max-width: 220px;
-		max-height: 200px;
-	}
-	.qrCode {
-		max-width: 150px;
-		margin-bottom: 12px;
-	}
-	.getAppText {
-		font-size: 1.2rem;
-	}
-	.cameraText {
-		font-size: 0.8rem;
-	}
-}
-
-// iOS Download Card Styling
-.ios-download-card {
-	background: #ffffff;
-	border: 2px solid #e5e7eb;
-	border-radius: 16px;
-	padding: 16px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 .getAppImage {
 	height: 250px;
 	width: auto;
 	display: block;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media only screen and (max-width: 768px) {
-	.ios-download-card {
-		padding: 12px;
-	}
-
-	.getAppImage {
-		height: 200px;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.ios-download-card {
-		padding: 10px;
-	}
-
-	.getAppImage {
-		height: 180px;
-	}
+.getAppImage:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 
