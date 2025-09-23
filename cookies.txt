@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.boringdice.app	TRUE	/	FALSE	1999999999	__cf_bm	sVkp_p_Dc1S17BMlpLzGXFlTDVOXADDTHXYD6cLGDkU-1730605456-1.0.1.1-hH66dsvHMKwfTupx.YH_XWc1MWU4oYrY6ijC6BP.VRoz3TA7seD1L3.w6SrNtgUgdM_.549Y7k1cwu9eWUf3rg
+boringdice.app	TRUE	/	FALSE	1999999999	SameSite	None
+

@@ -1,0 +1,12 @@
+HTTrack3.49-2 launched on Sat, 02 Nov 2024 21:43:47 at https://boringdice.app/
+(httrack https://boringdice.app/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:44:12	Warning: 	Link https://boringdice.app/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+
+HTTrack Website Copier/3.49-2 mirror complete in 30 seconds : 33 links scanned, 32 files written (1668323 bytes overall) [1035682 bytes received at 34522 bytes/sec], 1469172 bytes transferred using HTTP compression in 29 files, ratio 54%, 6.6 requests per connection
+(No errors, 1 warnings, 0 messages)
