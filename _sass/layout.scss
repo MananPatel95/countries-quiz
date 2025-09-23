@@ -374,6 +374,85 @@ nav > ul li a:active {
 	height: 75px;
 }
 
+// QR Code Styling
+.qrCodeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	background: #f8f9fa;
+	padding: 8px;
+}
+.qrCode {
+	max-width: 200px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	display: block;
+}
+.qrCode:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 768px) {
+	.qrCode {
+		max-width: 160px;
+	}
+	
+	.qrCodeContainer {
+		padding: 6px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.qrCode {
+		max-width: 140px;
+	}
+	
+	.qrCodeContainer {
+		padding: 4px;
+	}
+}
+
+// iOS Download Card Styling
+.ios-download-card {
+	background: #ffffff;
+	border: 2px solid #e5e7eb;
+	border-radius: 16px;
+	padding: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.getAppImage {
+	height: 250px;
+	width: auto;
+	display: block;
+}
+
+@media only screen and (max-width: 768px) {
+	.ios-download-card {
+		padding: 12px;
+	}
+
+	.getAppImage {
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.ios-download-card {
+		padding: 10px;
+	}
+
+	.getAppImage {
+		height: 180px;
+	}
+}
+
 
 
 // iPhone Device Preview
