@@ -376,44 +376,64 @@ nav > ul li a:active {
 
 // QR Code Styling
 .qrCodeContainer {
+	background: #ffffff;
+	border-radius: 16px;
+	padding: 24px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	margin: 0;
-	position: relative;
-	overflow: hidden;
-	border-radius: 12px;
-	background: #f8f9fa;
-	padding: 8px;
+	text-align: center;
+	max-width: 280px;
+	margin: 0 auto;
 }
 .qrCode {
 	max-width: 200px;
 	height: auto;
-	border-radius: 8px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
 	display: block;
+	margin-bottom: 16px;
 }
-.qrCode:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+.qrText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.getAppText {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #000;
+	margin: 0 0 8px 0;
+}
+.cameraText {
+	font-size: 0.9rem;
+	color: #666;
+	margin: 0;
 }
 @media only screen and (max-width: 768px) {
+	.qrCodeContainer {
+		padding: 20px;
+		max-width: 240px;
+	}
 	.qrCode {
 		max-width: 160px;
 	}
-	
-	.qrCodeContainer {
-		padding: 6px;
+	.getAppText {
+		font-size: 1.3rem;
 	}
 }
 @media only screen and (max-width: 480px) {
+	.qrCodeContainer {
+		padding: 16px;
+		max-width: 200px;
+	}
 	.qrCode {
 		max-width: 140px;
 	}
-	
-	.qrCodeContainer {
-		padding: 4px;
+	.getAppText {
+		font-size: 1.2rem;
+	}
+	.cameraText {
+		font-size: 0.8rem;
 	}
 }
 
