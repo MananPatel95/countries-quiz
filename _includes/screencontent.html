@@ -1,47 +1,65 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-{% for file in site.static_files %}
-    {% if file.path contains 'assets/screenshots/' %}
-        <script>
-            $(function() {
-                $(".iphoneScreen").attr('src', '{{ site.github.baseurl }}{{ file.path }}');
-                $(".iphoneScreen").removeClass("hidden");
-                console.log("{{ file.path }}");
-            });
-        </script>
-    {% elsif file.path contains 'assets/videos/' %}
-        {% unless file.path contains 'assets/videos/Place-video-files-here.txt' %}
-            <script>
-                $(function() {
-                    $(".iphoneScreen").addClass("hidden");
-                    console.log("remove screenshot");
-                });
-            </script>
-        {% endunless %}
-        {% if file.extname == ".mov" or file.extname == ".mp4" %}
-            <script>
-                $(function() {
-                    $(".videoContainer").removeClass("hidden");
-                    $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/mp4">');
-                    console.log("{{ file.path }}");
-                });
-            </script>
-        {% elsif file.extname == ".ogg" %}
-            <script>
-                $(function() {
-                    $(".videoContainer").removeClass("hidden");
-                    $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/ogg">');
-                    console.log("{{ file.path }}");
-                });
-            </script>
-        {% elsif file.extname == ".webm" %}
-        <script>
-            $(function() {
-                $(".videoContainer").removeClass("hidden");
-                $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/webm">');
-                console.log("{{ file.path }}");
-            });
-        </script>
+<script>
+$(function() {
+    // Check if there are any video files (excluding placeholder)
+    var hasVideos = false;
+    {% for file in site.static_files %}
+        {% if file.path contains 'assets/videos/' %}
+            {% unless file.path contains 'assets/videos/Place-video-files-here.txt' %}
+                hasVideos = true;
+            {% endunless %}
         {% endif %}
-    {% endif %}
-{% endfor %}
+    {% endfor %}
+    
+    // If videos exist, show video instead of screenshots
+    if (hasVideos) {
+        {% for file in site.static_files %}
+            {% if file.path contains 'assets/videos/' %}
+                {% unless file.path contains 'assets/videos/Place-video-files-here.txt' %}
+                    {% if file.extname == ".mov" or file.extname == ".mp4" %}
+                        $(".videoContainer").removeClass("hidden");
+                        $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/mp4">');
+                        console.log("{{ file.path }}");
+                    {% elsif file.extname == ".ogg" %}
+                        $(".videoContainer").removeClass("hidden");
+                        $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/ogg">');
+                        console.log("{{ file.path }}");
+                    {% elsif file.extname == ".webm" %}
+                        $(".videoContainer").removeClass("hidden");
+                        $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/webm">');
+                        console.log("{{ file.path }}");
+                    {% endif %}
+                {% endunless %}
+            {% endif %}
+        {% endfor %}
+    } else {
+        // Collect all screenshots
+        var screenshots = [];
+        {% for file in site.static_files %}
+            {% if file.path contains 'assets/screenshots/' %}
+                screenshots.push('{{ site.github.baseurl }}{{ file.path }}');
+            {% endif %}
+        {% endfor %}
+        
+        if (screenshots.length > 0) {
+            var currentIndex = 0;
+            var $iphoneScreen = $(".iphoneScreen");
+            
+            // Show first screenshot
+            $iphoneScreen.attr('src', screenshots[0]);
+            $iphoneScreen.removeClass("hidden");
+            
+            // Rotate through screenshots every 3 seconds
+            if (screenshots.length > 1) {
+                setInterval(function() {
+                    currentIndex = (currentIndex + 1) % screenshots.length;
+                    $iphoneScreen.attr('src', screenshots[currentIndex]);
+                }, 3000);
+            }
+            
+            console.log("Screenshots loaded:", screenshots.length);
+        }
+    }
+});
+</script>
