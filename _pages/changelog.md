@@ -6,6 +6,24 @@ include_in_header: true
 
 # Countries of the World App - Changelog
 
+## Version 2.6 - Sep 23, 2025
+
+**MAJOR UPDATE: 3 New Game Modes!**
+
+### COUNTRIES:
+- **Type Mode**: Master typing all 196 country names
+- **Map Mode**: Click and identify countries on the world map
+
+### CAPITALS:
+- **Type Mode**: Learn to spell every world capital
+- **Multiple Choice**: Test your capital city knowledge
+
+### FLAGS:
+- **Type Mode**: Identify flags by typing country names
+- **Multiple Choice**: Match flags to their countries
+
+**PLUS**: Global leaderboards, improved UI, faster loading, and more coming soon!
+
 ## Version 1.3 - Oct 16th, 2024
 - Added a flag guessing game mode!
 - Added a capital guessing game mode!
