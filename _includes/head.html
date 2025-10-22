@@ -9,6 +9,16 @@
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8MHYLZ311"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-D8MHYLZ311');
+	</script>
+
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}
 		<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
